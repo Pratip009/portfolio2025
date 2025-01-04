@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { JSX, useEffect, useState } from "react";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import myimg from '../assets/myimh.jpg';
@@ -67,7 +67,7 @@ const projects = [
   },
 ];
 
-const techIcons: Record<TechStack, TSX.Element> = {
+const techIcons: Record<TechStack, JSX.Element> = {
   React: <DiReact size={24} className="text-blue-400" />,
   "Node JS": <DiNodejsSmall size={24} className="text-green-600" />,
   MongoDB: <DiMongodb size={24} className="text-green-500" />,
